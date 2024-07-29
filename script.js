@@ -35,17 +35,17 @@ function handleClick(e) {
             headerText.innerHTML = `<h1 class="whichplayer">${currentplayer}'s Turn</h1>`;
             setTimeout(() => {
                 BestMove();
-            }, 500);
+            }, 300);
         }
     }
 }
 
 function BestMove() {
-    let bestScore = -Infinity;
+    let bestScore = -Infinity; // computer is the max player
     let move;
     board.forEach((val, index) => {
         if (val == null) {
-            board[index] = ai_player;
+            board[index] = ai_player; // X 
             let score = MiniMax(board, 0, false);
             board[index] = null;
             if (score >= bestScore) {
@@ -94,7 +94,7 @@ let scores = {
     "draw": 0,
 };
 let count = 0;
-function MiniMax(board, depth, isMaximizingPlayer) { // board,0,false
+function MiniMax(board, depth, isMaximizingPlayer) { // board , 0, false
     let result = checkWinner();
     // this simply means that the game has not ended
     if (result !== null) {
