@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+
+
+    background: #121839;
+}
+
+.header-text {
+    font-size: 25px;
+    color: #fff;
+
+}
+
+
+.main .header-text span {
+    font-size: 25px;
+    color: #fff;
+    background: #ad81db;
+
+    padding: 10px;
+    border-radius: 10px;
+
+
+
+}
+
+
+
+.main {
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    gap: 5px;
+}
+
+.box {
+    background: #fff;
+    height: 125px;
+    width: 125px;
+    display: flex;
+    border: 1px solid white;
+    justify-content: center;
+    align-content: center;
+    font-size: 80px;
+    color: #000;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.3s;
+    text-align: center;
+
+
+
+}
+
+.disable {
+    pointer-events: none;
+}
+
+.box:hover {
+    background: #ad81db;
+    border: none;
+    transform: scale(0.96);
+    transition: all 0.3s;
+
+}
+
+#reset-btn {
+    padding: 7px;
+    margin: 15px;
+    background: #b978ff;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 10%;
+    height: 7%;
+    transition: all 0.3s;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#reset-btn:hover {
+    transition: all 0.3s;
+    transform: scale(1.05);
+    background: #25ffa8;
+    color: black;
+}
+
+.whichplayer {
+    background: #25ffa8;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 20px;
+    color: #000;
+}
